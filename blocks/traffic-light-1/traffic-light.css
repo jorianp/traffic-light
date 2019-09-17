@@ -1,0 +1,13 @@
+@import url('./__green/traffic-light__green.css');
+@import url('./__red/traffic-light__red.css');
+@import url('./__yellow/traffic-light__yellow.css');
+
+.traffic-light-1 {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2A2C2F
+}

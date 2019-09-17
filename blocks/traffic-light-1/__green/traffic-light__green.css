@@ -1,0 +1,10 @@
+.traffic-light-1__green {
+    position: absolute;
+
+    width: 40%;
+    height: 40vw;
+
+    border-radius: 50%;
+    background-color: green;
+    opacity: 0.08;
+}

@@ -1,0 +1,10 @@
+.traffic-light-2__red {
+    position: absolute;
+
+    width: 40%;
+    height: 40vw;
+
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.08;
+}

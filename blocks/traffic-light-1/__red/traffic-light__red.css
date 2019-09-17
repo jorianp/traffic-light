@@ -1,0 +1,7 @@
+.traffic-light-1__red {
+    width: 40%;
+    height: 40vw;
+
+    border-radius: 50%;
+    background-color: red;
+}

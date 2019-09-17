@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <title>Traffic Light</title>
+</head>
+<body>
+    
+    <main class="page">
+
+        <section class="timer">
+            <div class="timer__clock">
+                <div class="clock__seconds-group clock__display-grp">
+                    <div class="seconds-group__first number-grp">
+                        <div class="number-grp__wrp">
+                            <div class="num num-0"><p>0</p></div>
+                            <div class="num num-1"><p>1</p></div>
+                            <div class="num num-2"><p>2</p></div>
+                            <div class="num num-3"><p>3</p></div>
+                            <div class="num num-4"><p>4</p></div>
+                            <div class="num num-5"><p>5</p></div>
+                            <div class="num num-6"><p>6</p></div>
+                            <div class="num num-7"><p>7</p></div>
+                            <div class="num num-8"><p>8</p></div>
+                            <div class="num num-9"><p>9</p></div>
+                        </div>
+                    </div>
+                    <div class="seconds-group__second number-grp">
+                        <div class="number-grp__wrp">
+                            <div class="num num-0"><p>0</p></div>
+                            <div class="num num-1"><p>1</p></div>
+                            <div class="num num-2"><p>2</p></div>
+                            <div class="num num-3"><p>3</p></div>
+                            <div class="num num-4"><p>4</p></div>
+                            <div class="num num-5"><p>5</p></div>
+                            <div class="num num-6"><p>6</p></div>
+                            <div class="num num-7"><p>7</p></div>
+                            <div class="num num-8"><p>8</p></div>
+                            <div class="num num-9"><p>9</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="traffic-light">
+            <a name="/1" href="" class="traffic-light-1">
+                <div class="traffic-light-1__red"></div>
+                <div class="traffic-light-1__yellow"></div>
+                <div class="traffic-light-1__green"></div>
+            </a>
+
+            <a name="/2" href="" class="traffic-light-2">
+                <div class="traffic-light-2__red"></div>
+                <div class="traffic-light-2__yellow"></div>
+                <div class="traffic-light-2__green"></div>
+            </a>
+
+            <a name="/3" href="" class="traffic-light-3">
+                <div class="traffic-light-3__red"></div>
+                <div class="traffic-light-3__yellow"></div>
+                <div class="traffic-light-3__green"></div>
+            </a>
+        </section>
+
+    </main>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

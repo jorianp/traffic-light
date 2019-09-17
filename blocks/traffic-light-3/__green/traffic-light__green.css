@@ -1,0 +1,7 @@
+.traffic-light-3__green {
+    width: 40%;
+    height: 40vw;
+
+    border-radius: 50%;
+    background-color: green;
+}
