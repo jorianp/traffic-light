@@ -29,8 +29,8 @@ function green() {
 
 function redOrGreen() {
     if (document.querySelector('.traffic-light-2').classList.contains('check')) {
-        document.location.hash = '#/1';
-    } else document.location.hash = '#/3';
+        document.location.hash = '#/red';
+    } else document.location.hash = '#/green';
 }
 
 
@@ -100,37 +100,40 @@ function initTimer (t) {
 
 
 window.addEventListener('DOMContentLoaded', function() {
-    window.location.replace('#/1');
+    window.location.replace('#/red');
     document.querySelector('.traffic-light-2').classList.add('hide');
     document.querySelector('.traffic-light-3').classList.add('hide');
 })
 
 window.addEventListener('hashchange', function() {
-    if (!(document.location.hash === '#/1')) {
-        if (!(document.location.hash === '#/2')) {
-            if (!(document.location.hash === '#/3')) {
+    if (!(document.location.hash === '#/red')) {
+        if (!(document.location.hash === '#/yellow')) {
+            if (!(document.location.hash === '#/green')) {
                 return alert('ERROR');
             } else {
+                console.log(document.location.hash);
                 green();
                 initTimer('15');
                 setTimeout(() => {  document.querySelector('.traffic-light-3__red').classList.add('blink-after');
                                     document.querySelector('.traffic-light-3__yellow').classList.add('blink-after');
                                     document.querySelector('.traffic-light-3__green').classList.add('blink'); 
-                                    setTimeout(() => { document.location.hash = '#/2' }, 3000); 
+                                    setTimeout(() => { document.location.hash = '#/yellow' }, 3000); 
                                 }, 12000);
             }
         } else {
+            console.log(document.location.hash);
             yellow();
             initTimer('3');
             setTimeout(redOrGreen, 3000);
         }
     } else {
+        console.log(document.location.hash);
         red();
         initTimer('10');
         setTimeout(() => {  document.querySelector('.traffic-light-1__red').classList.add('blink');
                             document.querySelector('.traffic-light-1__yellow').classList.add('blink-after');
                             document.querySelector('.traffic-light-1__green').classList.add('blink-after'); 
-                            setTimeout(() => { document.location.hash = '#/2' }, 3000);                       
+                            setTimeout(() => { document.location.hash = '#/yellow' }, 3000);                       
                         }, 7000);
     }
 });
